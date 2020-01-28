@@ -34,7 +34,7 @@ def greet_user():
 
 
 ```python
-# Modify the code in this cell to fulfill the requirements of Question 2
+# Modify the code in this cell to fulfill the requirements of Question 1
 # (Replace None with appropriate code)
 name = None
 ```
