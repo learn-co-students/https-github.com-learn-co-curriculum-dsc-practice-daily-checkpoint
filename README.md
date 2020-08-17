@@ -36,6 +36,7 @@ def greet_user():
 ```python
 # Modify the code in this cell to use in your answer 
 # (Replace None with appropriate code)
+
 name = None
 ```
 
