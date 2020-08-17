@@ -7,7 +7,7 @@ import pickle as pkl
 import numpy as np
 import pandas as pd
 
-import sklearn
+import sklearn.neighbors
 
 from IPython.display import Markdown, display
 
