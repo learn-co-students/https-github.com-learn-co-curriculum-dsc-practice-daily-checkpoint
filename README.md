@@ -9,6 +9,20 @@ Read the instructions carefully. You will be asked both to write code and to res
 
 **Note on daily checkpoint short answer questions:** Please use your own words. The expectation is that you have not copied and pasted from an external source, even if you consult another source to help craft your response. While the short answer questions are not necessarily being assessed on grammatical correctness or sentence structure, you should do your best to communicate yourself clearly.
 
+## Imports
+
+You will usually have to import different packages into a checkpoint or other material we give you
+
+Don't worry if you don't have all the mechanics about what that means at this point
+
+Just run the cell below, which allows the test code to function
+
+
+```python
+from test_scripts.test_class import Test
+test = Test()
+```
+
 ## Question 1
 
 Adapt the `greet_user` function to do the following:
@@ -62,9 +76,6 @@ name = "Gene Hackman"
 
 greet_user(name)
 ```
-
-    Greetings! I am Gene Hackman and I am pleased to make your acquaintance!
-
 
 ## Question 2
 
