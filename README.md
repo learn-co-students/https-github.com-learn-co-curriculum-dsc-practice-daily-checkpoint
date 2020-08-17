@@ -26,7 +26,9 @@ test = Test()
 
 ## Question 1
 
-Adapt the `greet_user` function to do the following:
+Copy and paste the given `greet_user` code into a cell below.
+
+Adapt the function to do the following:
 
  - take a name as an argument
  - print "Greetings! I am `name` and I am pleased to make your acquaintance!"
@@ -37,8 +39,9 @@ Run all cells to confirm the result.
 
 
 ```python
+# Copy / paste this starter code into a cell below
 # Modify the code in this cell to use in your answer
-#(Replace None with appropriate code)
+# (Replace None with appropriate code)
 
 def greet_user(name):
     """
@@ -46,7 +49,7 @@ def greet_user(name):
     and prints a greeting including that name 
     """
     
-    statement = 'Greetings! I am Gene Hackman and I am pleased to make your acquaintance!'
+    statement = None
     
     print(statement)
     
@@ -56,10 +59,11 @@ def greet_user(name):
 
 
 ```python
+# Copy / paste this code into a cell below
 # Modify the code in this cell to use in your answer 
 # (Replace None with appropriate code)
 
-name = 'Gene Hackman'
+name = None
 ```
 
 
