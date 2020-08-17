@@ -34,27 +34,10 @@ def greet_user():
 
 
 ```python
-# __SOLUTION__
-def greet_user(name):
-    """
-    this function takes a string name as an argument 
-    and prints a greeting including that name 
-    """
-    
-    print(f"Greetings! I am {name} and I am pleased to make your acquaintance!")
-```
-
-
-```python
 # Modify the code in this cell to use in your answer 
 # (Replace None with appropriate code)
+
 name = None
-```
-
-
-```python
-# __SOLUTION__
-name = "Gene Hackman"
 ```
 
 
@@ -66,10 +49,21 @@ greet_user(name)
 
 ```python
 # __SOLUTION__
+
+def greet_user(name):
+    """
+    this function takes a string name as an argument 
+    and prints a greeting including that name 
+    """
+    
+    print(f"Greetings! I am {name} and I am pleased to make your acquaintance!")
+
+name = "Gene Hackman"
+
 greet_user(name)
 ```
 
-    Greetings! I am Sir Patrick Stewart and I am pleased to make your acquaintance!
+    Greetings! I am Gene Hackman and I am pleased to make your acquaintance!
 
 
 ## Question 2
