@@ -16,13 +16,13 @@ Adapt the `greet_user` function to do the following:
  - take a name as an argument
  - print "Greetings! I am `name` and I am pleased to make your acquaintance!"
 
-Then in the next cell, assign your actual name (i.e. "Sir Patrick Stewart" or "Lupita Nyong'o") to the variable `name`.
+Then in the next cell, assign the name "Gene Hackman" to the variable `name`.
 
 Run all cells to confirm the result.
 
 
 ```python
-# Modify the code in this cell to fulfill the requirements of Question 1
+# Modify the code in this cell to use in your answer
 def greet_user():
     """
     this function takes a string name as an argument 
@@ -46,7 +46,7 @@ def greet_user(name):
 
 
 ```python
-# Modify the code in this cell to fulfill the requirements of Question 1
+# Modify the code in this cell to use in your answer 
 # (Replace None with appropriate code)
 name = None
 ```
@@ -54,7 +54,7 @@ name = None
 
 ```python
 # __SOLUTION__
-name = "Sir Patrick Stewart"
+name = "Gene Hackman"
 ```
 
 
@@ -84,7 +84,7 @@ Please explain the purpose of daily checkpoints and code challenges in the Flati
 
 ```python
 # __SOLUTION__
-# The purpose of assessments are to assess a student's comprehension and application of our Data Science program's key content.
-# Daily checkpoints are formative, in-depth assessments
-# Code challenges are summative, end-to-end assessments
+"""The purpose of assessments are to assess a student's comprehension and application of our Data Science program's key content.
+Daily checkpoints are formative, in-depth assessments
+Code challenges are summative, end-to-end assessments"""
 ```
