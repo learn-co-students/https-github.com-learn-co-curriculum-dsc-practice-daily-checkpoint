@@ -16,8 +16,6 @@ You will usually have to import different packages into a checkpoint or other ma
 Don't worry if you don't have all the mechanics about what that means at this point
 
 Just run the cell below, which allows the test code to function
-from test_scripts.test_class import Test
-test = Test()
 
 
 ```python
@@ -40,13 +38,20 @@ Run all cells to confirm the result.
 
 ```python
 # Modify the code in this cell to use in your answer
-def greet_user():
+#(Replace None with appropriate code)
+
+def greet_user(name):
     """
     this function takes a string name as an argument 
     and prints a greeting including that name 
     """
     
-    print()
+    statement = 'Greetings! I am Gene Hackman and I am pleased to make your acquaintance!'
+    
+    print(statement)
+    
+    return statement
+
 ```
 
 
@@ -54,7 +59,7 @@ def greet_user():
 # Modify the code in this cell to use in your answer 
 # (Replace None with appropriate code)
 
-name = None
+name = 'Gene Hackman'
 ```
 
 
@@ -73,25 +78,40 @@ def greet_user(name):
     this function takes a string name as an argument 
     and prints a greeting including that name 
     """
+    statement = f"Greetings! I am {name} and I am pleased to make your acquaintance!"
+    print(statement)
     
-    print(f"Greetings! I am {name} and I am pleased to make your acquaintance!")
+    return statement
 
 name = "Gene Hackman"
 
-greet_user(name)
+test.save(greet_user(name), 'gene_hackman')
 
-test.save()
+test.save(greet_user('Ben'), 'hard_coding')
+
+test.save(greet_user.__code__.co_varnames, 'attributes')
 
 
 
 ### END SOLUTION
 ```
 
+    Greetings! I am Gene Hackman and I am pleased to make your acquaintance!
+    Greetings! I am Ben and I am pleased to make your acquaintance!
+
+
 
 ```python
 ### BEGIN HIDDEN TESTS
 
-test.run_test()
+
+test.run_test(greet_user(name), 'gene_hackman')    
+
+name = 'Ben'
+test.run_test(greet_user(name), 'hard_coding')
+
+test.run_test(greet_user.__code__.co_varnames, 'attributes')
+
 
 ### END HIDDEN TESTS
 ```
