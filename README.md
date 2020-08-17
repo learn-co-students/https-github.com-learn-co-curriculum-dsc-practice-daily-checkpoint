@@ -16,6 +16,8 @@ You will usually have to import different packages into a checkpoint or other ma
 Don't worry if you don't have all the mechanics about what that means at this point
 
 Just run the cell below, which allows the test code to function
+from test_scripts.test_class import Test
+test = Test()
 
 
 ```python
@@ -63,7 +65,8 @@ greet_user(name)
 
 
 ```python
-# __SOLUTION__
+### BEGIN SOLUTION
+
 
 def greet_user(name):
     """
@@ -76,21 +79,31 @@ def greet_user(name):
 name = "Gene Hackman"
 
 greet_user(name)
+
+test.save()
+
+
+
+### END SOLUTION
+```
+
+
+```python
+### BEGIN HIDDEN TESTS
+
+test.run_test()
+
+### END HIDDEN TESTS
 ```
 
 ## Question 2
 
 Please explain the purpose of daily checkpoints and code challenges in the Flatiron School Data Science program.
 
+=== BEGIN MARK SCHEME ===
 
-```python
-# Your written answer here
-```
-
-
-```python
-# __SOLUTION__
 """The purpose of assessments are to assess a student's comprehension and application of our Data Science program's key content.
 Daily checkpoints are formative, in-depth assessments
 Code challenges are summative, end-to-end assessments"""
-```
+
+=== END MARK SCHEME ===
