@@ -234,16 +234,10 @@ class Test():
 
         test_obj = self.load_ind(name)
 
-        try:
-            if kind in self.obj_tests_dict.keys():
-                self.obj_tests_dict[kind](
-                    obj, test_obj, **self.obj_tests_dict_kwargs[kind])
+        if kind in self.obj_tests_dict.keys():
+            self.obj_tests_dict[kind](
+                obj, test_obj, **self.obj_tests_dict_kwargs[kind])
 
-            else:
-                assert obj == test_obj
+        else:
+            assert obj == test_obj
 
-            self.output()
-
-        except AssertionError:
-
-            self.output(result=False)
