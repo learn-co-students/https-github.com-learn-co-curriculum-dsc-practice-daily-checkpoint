@@ -19,6 +19,7 @@ Just run the cell below, which allows the test code to function
 
 
 ```python
+#Run this cell without changes to import tests
 from test_scripts.test_class import Test
 test = Test()
 ```
