@@ -22,6 +22,7 @@ Run all cells to confirm the result.
 
 
 ```python
+
 def greet_user(name):
     """
     this function takes a string name as an argument 
@@ -29,19 +30,13 @@ def greet_user(name):
     """
     
     print(f"Greetings! I am {name} and I am pleased to make your acquaintance!")
-```
 
-
-```python
 name = "Gene Hackman"
-```
 
-
-```python
 greet_user(name)
 ```
 
-    Greetings! I am Sir Patrick Stewart and I am pleased to make your acquaintance!
+    Greetings! I am Gene Hackman and I am pleased to make your acquaintance!
 
 
 ## Question 2
