@@ -17,13 +17,6 @@ Don't worry if you don't have all the mechanics about what that means at this po
 
 Just run the cell below, which allows the test code to function
 
-
-```python
-#Run this cell without changes to import tests
-from test_scripts.test_class import Test
-test = Test()
-```
-
 ## Question 1
 
 Copy and paste the given `greet_user` code into a cell below.
@@ -55,20 +48,8 @@ def greet_user(name):
     
     return statement
 
-```
-
-
-```python
-# Copy / paste this code into a cell below
-# Modify the code in this cell to use in your answer 
-# (Replace None with appropriate code)
-
 name = None
-```
 
-
-```python
-# Run this cell without changes to check your answer
 greet_user(name)
 ```
 
@@ -76,6 +57,9 @@ greet_user(name)
 ```python
 ### BEGIN SOLUTION
 
+
+from test_scripts.test_class import Test
+test = Test()
 
 def greet_user(name):
     """
@@ -100,21 +84,25 @@ test.save(greet_user.__code__.co_varnames, 'attributes')
 ### END SOLUTION
 ```
 
-    Greetings! I am Gene Hackman and I am pleased to make your acquaintance!
-    Greetings! I am Ben and I am pleased to make your acquaintance!
-
-
 
 ```python
 ### BEGIN HIDDEN TESTS
 
-
-test.run_test(greet_user(name), 'gene_hackman')    
+try:
+test.run_test(greet_user(name), 'gene_hackman')   
+except error:
+    raise AttributeError ("Looks like your function didn't work properly?")
 
 name = 'Ben'
+try:
 test.run_test(greet_user(name), 'hard_coding')
-
-test.run_test(greet_user.__code__.co_varnames, 'attributes')
+except error:
+    raise AttributeError ("Looks like you hard-coded the info instead of making it dynamic?")
+    
+try:
+    test.run_test(greet_user.__code__.co_varnames, 'attributes')
+except error:
+    raise AttributeError ("Looks like you altered the function?")
 
 
 ### END HIDDEN TESTS
